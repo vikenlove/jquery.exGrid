@@ -1,0 +1,554 @@
+
+.flexigrid {
+    border: 0 solid #eee;
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    overflow: hidden;
+    position: relative;
+    width: 760px;
+}
+.flexigrid.hideBody {
+    border-bottom: 1px solid #ccc;
+    height: 26px !important;
+}
+.ie6fullwidthbug {
+    border-right: 0 solid #ccc;
+    padding-right: 2px;
+}
+.flexigrid div.nDiv {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #eee url("../img/line.gif") repeat-y scroll -1px top;
+    border-color: -moz-use-text-color #ccc #ccc;
+    border-image: none;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    float: left;
+    left: 0;
+    overflow: auto;
+    position: absolute;
+    z-index: 999;
+}
+.flexigrid div.nDiv table {
+    margin: 2px;
+}
+.flexigrid div.hDivBox {
+    float: left;
+    width:760px;
+  
+}
+.flexigrid div.bDiv table {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.flexigrid div.bDiv table.autoht {
+    border-bottom: 0 none;
+    margin-bottom: 0;
+}
+.flexigrid div.nDiv td {
+    border: 1px solid #eee;
+    cursor: default;
+    padding: 2px 3px;
+}
+.flexigrid div.nDiv tr:hover td, .flexigrid div.nDiv tr.ndcolover td {
+    background: #d5effc url("../img/hl.png") repeat-x scroll center top;
+    border: 1px solid #a8d8eb;
+}
+.flexigrid div.nDiv td.ndcol1 {
+    border-right: 1px solid #ccc;
+}
+.flexigrid div.nDiv td.ndcol2 {
+    border-left: 1px solid #fff;
+    padding-right: 10px;
+}
+.flexigrid div.nDiv tr:hover td.ndcol1, .flexigrid div.nDiv tr.ndcolover td.ndcol1 {
+    border-right: 1px solid #d2e3ec;
+}
+.flexigrid div.nDiv tr:hover td.ndcol2, .flexigrid div.nDiv tr.ndcolover td.ndcol2 {
+    border-left: 1px solid #eef8ff;
+}
+.flexigrid div.nBtn {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #fafafa url("../img/fhbg.gif") repeat-x scroll center bottom;
+    border-color: #ccc;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 0 0 1px;
+    cursor: pointer;
+    display: none;
+    height: 24px;
+    left: 0;
+    margin-top: 1px;
+    position: absolute;
+    top: 0;
+    width: 14px;
+    z-index: 900;
+}
+.flexigrid div.nBtn div {
+    background: rgba(0, 0, 0, 0) url("../img/ddn.png") no-repeat scroll center center;
+    border-left: 1px solid #fff;
+    float: left;
+    height: 24px;
+    width: 12px;
+}
+.flexigrid div.nBtn.srtd {
+    background: rgba(0, 0, 0, 0) url("../img/wbg.gif") repeat-x scroll 0 -1px;
+}
+.flexigrid div.mDiv {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: rgba(0, 0, 0, 0) url("../img/wbg.gif") repeat-x scroll center top;
+    border-color: -moz-use-text-color #ccc;
+    border-image: none;
+    border-style: none solid;
+    border-width: 0 1px;
+    display: block;
+    font-weight: 700;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+.flexigrid div.mDiv div {
+    padding: 6px;
+    white-space: nowrap;
+}
+.flexigrid div.mDiv div.ptogtitle {
+    border: 1px solid #ccc;
+    cursor: pointer;
+    height: 16px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    right: 3px;
+    top: 4px;
+    width: 16px;
+}
+.flexigrid div.mDiv div.ptogtitle:hover {
+    background-position: left -2px;
+    border-color: #bbb;
+}
+.flexigrid div.mDiv div.ptogtitle span {
+    background: rgba(0, 0, 0, 0) url("../img/uup.png") no-repeat scroll center center;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #eee;
+    border-top: 1px solid #fff;
+    display: block;
+    height: 14px;
+    width: 14px;
+}
+.flexigrid div.mDiv div.ptogtitle.vsble span {
+    background: rgba(0, 0, 0, 0) url("../img/ddn.png") no-repeat scroll center center;
+}
+.flexigrid div.tDiv {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #fafafa url("../img/wbg.gif") repeat-x scroll center top;
+    border-color: #ccc #ccc -moz-use-text-color;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+    overflow: hidden;
+    position: relative;
+}
+.flexigrid div.tDiv2 {
+    clear: both;
+    float: left;
+    padding: 1px;
+}
+.flexigrid div.sDiv {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #fafafa url("../img/wbg.gif") repeat-x scroll center top;
+    border-color: -moz-use-text-color #ccc #ccc;
+    border-image: none;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    display: none;
+    overflow: hidden;
+    position: relative;
+}
+.flexigrid div.sDiv2 {
+    clear: both;
+    float: left;
+    padding: 5px;
+    width: 1024px;
+}
+.flexigrid div.sDiv2 input, .flexigrid div.sDiv2 select {
+    vertical-align: middle;
+}
+.flexigrid div.btnseparator {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #fff;
+    float: left;
+    height: 22px;
+    margin: 1px;
+}
+.flexigrid div.fbutton {
+    cursor: pointer;
+    display: block;
+    float: left;
+    padding: 1px;
+}
+.flexigrid div.fbutton div {
+    float: left;
+    padding: 1px 3px;
+}
+.flexigrid div.fbutton span {
+    display: block;
+    float: left;
+    padding: 3px;
+}
+.flexigrid div.fbutton:hover, .flexigrid div.fbutton.fbOver {
+    border: 1px solid #ccc;
+    padding: 0;
+}
+.flexigrid div.fbutton:hover div, .flexigrid div.fbutton.fbOver div {
+    border-color: #fff #eee #eee #fff;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0 2px;
+}
+.flexigrid div.hDiv {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #fafafa url("../img/fhbg.gif") repeat-x scroll center bottom;
+    border-color: #ccc #ccc -moz-use-text-color;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+    overflow: hidden;
+    position: relative;
+}
+.flexigrid div.hDiv table {
+    border-right: 1px solid #fff;
+}
+.flexigrid div.cDrag {
+    float: left;
+    overflow: visible;
+    position: absolute;
+    z-index: 2;
+}
+.flexigrid div.cDrag div {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    cursor: col-resize;
+    display: block;
+    float: left;
+    height: 24px;
+    position: absolute;
+    width: 5px;
+}
+.flexigrid div.cDrag div:hover, .flexigrid div.cDrag div.dragging {
+    background: rgba(0, 0, 0, 0) url("../img/line.gif") repeat-y scroll 2px center;
+}
+.flexigrid div.iDiv {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #316ac5;
+    overflow: visible;
+    position: absolute;
+}
+.flexigrid div.iDiv input, .flexigrid div.iDiv select, .flexigrid div.iDiv textarea {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+}
+.flexigrid div.iDiv input.tb {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 0 none;
+    height: 100%;
+    padding: 0;
+    width: 100%;
+}
+.flexigrid div.bDiv {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #fff none repeat scroll 0 0;
+    border-color: -moz-use-text-color #ccc #ccc;
+    border-image: none;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    overflow: auto;
+    position: relative;
+}
+.flexigrid div.hGrip {
+    background: rgba(0, 0, 0, 0) url("../img/line.gif") repeat-x scroll center center;
+    cursor: col-resize;
+    height: 5px;
+    margin-right: 1px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 5px;
+}
+.flexigrid div.hGrip:hover, .flexigrid div.hGrip.hgOver {
+    border-right: 1px solid #999;
+    margin-right: 0;
+}
+.flexigrid div.vGrip {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #fafafa url("../img/wbg.gif") repeat-x scroll 0 -1px;
+    border-color: -moz-use-text-color #ccc #ccc;
+    border-image: none;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    cursor: row-resize;
+    height: 5px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.flexigrid div.vGrip span {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-bottom: 1px solid #aaa;
+    border-top: 1px solid #aaa;
+    display: block;
+    height: 1px;
+    margin: 1px auto;
+    overflow: hidden;
+    width: 20px;
+}
+.flexigrid div.hDiv th, .flexigrid div.bDiv td {
+  
+    border-right: 1px solid #ddd;
+    overflow: hidden;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+    vertical-align: top !important;
+   display: inline-block;
+   line-height: 2;
+}
+.flexigrid div.hDiv th div, .flexigrid div.bDiv td div, div.colCopy div {
+    border-left: 0 solid #fff;
+/*     padding: 5px; */
+}
+.flexigrid div.hDiv th, div.colCopy {
+    cursor: default;
+    font-weight: 400;
+    height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+div.colCopy {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #fafafa url("../img/fhbg.gif") repeat-x scroll center bottom;
+    border-color: #ccc #ccc -moz-use-text-color;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    overflow: hidden;
+}
+.flexigrid div.hDiv th.sorted {
+    background: rgba(0, 0, 0, 0) url("../img/wbg.gif") repeat-x scroll 0 -1px;
+    border-bottom: 0 solid #ccc;
+}
+.flexigrid div.hDiv th.thOver div, .flexigrid div.hDiv th.sorted.thOver div {
+    border-bottom: 1px solid orange;
+    padding-bottom: 4px;
+}
+.flexigrid div.hDiv th.sorted div {
+    border-bottom: 0 solid #ccc;
+    padding-bottom: 5px;
+}
+.flexigrid div.hDiv th.thMove {
+    background: #fff none repeat scroll 0 0;
+    color: #fff;
+}
+.flexigrid div.hDiv th.sorted.thMove div {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 4px;
+}
+.flexigrid div.hDiv th.thMove div {
+    background: #fff none repeat scroll 0 0 !important;
+}
+.flexigrid div.hDiv th div.sdesc {
+    background: rgba(0, 0, 0, 0) url("../img/dn.png") no-repeat scroll center top;
+}
+.flexigrid div.hDiv th div.sasc {
+    background: rgba(0, 0, 0, 0) url("../img/up.png") no-repeat scroll center top;
+}
+.flexigrid div.bDiv td {
+    border-bottom: 1px solid #fff;
+    vertical-align: top;
+    white-space: nowrap;
+}
+.flexigrid span.cdropleft {
+    background: rgba(0, 0, 0, 0) url("../img/prev.gif") no-repeat scroll -4px center;
+    display: block;
+    height: 24px;
+    margin-bottom: -24px;
+    position: relative;
+    top: -24px;
+    width: 24px;
+    z-index: 3;
+}
+.flexigrid div.hDiv span.cdropright {
+    background: rgba(0, 0, 0, 0) url("../img/next.gif") no-repeat scroll 12px center;
+    display: block;
+    float: right;
+    height: 24px;
+    margin-bottom: -24px;
+    position: relative;
+    top: -24px;
+    width: 24px;
+}
+.flexigrid div.bDiv td div {
+    border-top: 0 solid #fff;
+    padding-bottom: 4px;
+}
+.flexigrid tr td.sorted {
+    background: #f3f3f3 none repeat scroll 0 0;
+    border-bottom: 1px solid #f3f3f3;
+    border-right: 1px solid #ddd;
+}
+.flexigrid tr.erow td {
+    background: #f7f7f7 none repeat scroll 0 0;
+    border-bottom: 1px solid #f7f7f7;
+}
+.flexigrid tr.erow td.sorted {
+    background: #e3e3e3 none repeat scroll 0 0;
+    border-bottom: 1px solid #e3e3e3;
+}
+.flexigrid div.bDiv tr:hover td, .flexigrid div.bDiv tr:hover td.sorted, .flexigrid div.bDiv tr.trOver td.sorted, .flexigrid div.bDiv tr.trOver td {
+    background: #d9ebf5 none repeat scroll 0 0;
+    border-bottom: 1px dotted #a8d8eb;
+    border-left: 1px solid #eef8ff;
+}
+.flexigrid div.bDiv tr.trSelected:hover td, .flexigrid div.bDiv tr.trSelected:hover td.sorted, .flexigrid div.bDiv tr.trOver.trSelected td.sorted, .flexigrid div.bDiv tr.trOver.trSelected td, .flexigrid tr.trSelected td.sorted, .flexigrid tr.trSelected td {
+    background: #d5effc url("../img/hl.png") repeat-x scroll center top;
+    border-bottom: 1px solid #a8d8eb;
+    border-left: 1px solid #eef8ff;
+    border-right: 1px solid #d2e3ec;
+}
+.flexigrid.novstripe .bDiv table {
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.flexigrid.novstripe div.bDiv td {
+    border-right-color: #fff;
+}
+.flexigrid.novstripe div.bDiv tr.erow td.sorted {
+    border-right-color: #e3e3e3;
+}
+.flexigrid.novstripe div.bDiv tr td.sorted {
+    border-right-color: #f3f3f3;
+}
+.flexigrid.novstripe div.bDiv tr.erow td {
+    border-left-color: #f7f7f7;
+    border-right-color: #f7f7f7;
+}
+.flexigrid.novstripe div.bDiv tr.trSelected:hover td, .flexigrid.novstripe div.bDiv tr.trSelected:hover td.sorted, .flexigrid.novstripe div.bDiv tr.trOver.trSelected td.sorted, .flexigrid.novstripe div.bDiv tr.trOver.trSelected td, .flexigrid.novstripe tr.trSelected td.sorted, .flexigrid.novstripe tr.trSelected td {
+    border-left: 1px solid #06f;
+    border-right: 1px solid #06f;
+}
+.flexigrid.novstripe div.bDiv tr.trOver td, .flexigrid.novstripe div.bDiv tr:hover td {
+    border-left-color: #d9ebf5;
+    border-right-color: #d9ebf5;
+}
+.flexigrid div.pDiv {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background:url(../img/wbg.gif) repeat-x scroll 0 -1px;
+    border-color: -moz-use-text-color #ccc #ccc;
+    border-image: none;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+.flexigrid div.pDiv div.pDiv2 {
+    float: left;
+    margin: 3px 3px 3px -2px;
+    width: 1024px;
+}
+div.pGroup {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    float: left;
+    height: 24px;
+    margin: 0 5px;
+}
+.flexigrid div.pDiv .pPageStat, .flexigrid div.pDiv .pcontrol {
+    overflow: visible;
+    position: relative;
+    top: 5px;
+}
+.flexigrid div.pDiv input {
+    position: relative;
+    top: -5px;
+    vertical-align: text-top;
+}
+.flexigrid div.pDiv div.pButton {
+    border: 0 none;
+    cursor: pointer;
+    float: left;
+    height: 22px;
+    overflow: hidden;
+    width: 22px;
+}
+.flexigrid div.pDiv div.pButton:hover, .flexigrid div.pDiv div.pButton.pBtnOver {
+    border: 1px solid #ccc;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+.flexigrid div.pDiv div.pButton span {
+    display: block;
+    float: left;
+    height: 20px;
+    width: 20px;
+}
+.flexigrid div.pDiv div.pButton:hover span, .flexigrid div.pDiv div.pButton.pBtnOver span {
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+    height: 19px;
+    width: 19px;
+}
+.flexigrid .pSearch {
+    background: rgba(0, 0, 0, 0) url("../img/magnifier.png") no-repeat scroll center center;
+}
+.flexigrid .pFirst {
+    background: rgba(0, 0, 0, 0) url("../img/first.gif") no-repeat scroll center center;
+}
+.flexigrid .pPrev {
+    background: rgba(0, 0, 0, 0) url("../img/prev.gif") no-repeat scroll center center;
+}
+.flexigrid .pNext {
+    background: rgba(0, 0, 0, 0) url("../img/next.gif") no-repeat scroll center center;
+}
+.flexigrid .pLast {
+    background: rgba(0, 0, 0, 0) url("../img/last.gif") no-repeat scroll center center;
+}
+.flexigrid .pReload {
+    background: rgba(0, 0, 0, 0) url("../img/load.png") no-repeat scroll center center;
+}
+.flexigrid .pReload.loading {
+    background: rgba(0, 0, 0, 0) url("../img/load.gif") no-repeat scroll center center;
+}
+.flexigrid.ie div.hDiv th div, .flexigrid.ie div.bDiv td div, div.colCopy.ie div {
+    overflow: hidden;
+}

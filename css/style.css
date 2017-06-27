@@ -1,0 +1,147 @@
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0 none;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: outside none none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote::before, blockquote::after, q::before, q::after {
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body {
+    background: #333 none repeat scroll 0 0;
+    color: #eee;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 20px;
+}
+ul li {
+    background: rgba(0, 0, 0, 0) url("images/accept.png") no-repeat scroll left center;
+    list-style: outside none none;
+    margin-left: 10px;
+    padding: 3px 3px 3px 20px;
+}
+ul, ol {
+    margin-bottom: 10px;
+}
+ol li {
+    list-style: outside none none;
+    padding: 10px 10px 5px;
+}
+ol li div.question {
+    color: #ccc;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+a {
+    color: #0066ff;
+    text-decoration: none;
+}
+h1 {
+    color: #0099ff;
+    font-size: 26px;
+    font-weight: normal;
+    margin: 0;
+}
+h2 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 15px 0 5px;
+}
+.code {
+    background: #555 none repeat scroll 0 0;
+    color: #eee;
+    display: none;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.title {
+    background: #0099ff none repeat scroll 0 0;
+    color: #fff;
+    padding: 10px;
+}
+.bborder {
+    background: #eee none repeat scroll 0 0;
+    border: 0 solid #ccc;
+    padding: 3px;
+}
+.update {
+    border: 1px solid #777;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.update h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 5px 0 5px 10px;
+}
+.update.fh {
+    height: auto;
+}
+.update p {
+    margin: 10px;
+}
+.update h2 {
+    border-bottom: 2px solid #0066ff;
+    border-left: 0 solid #06f;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0 0 3px;
+    padding: 5px;
+    position: relative;
+    text-transform: uppercase;
+}
+.flexigrid div.fbutton .add {
+    background: rgba(0, 0, 0, 0) url("../img/add.png") no-repeat scroll left center;
+}
+.flexigrid div.fbutton .delete {
+    background: rgba(0, 0, 0, 0) url("../img/close.png") no-repeat scroll left center;
+}
+.flexigrid div.fbutton .save {
+    background: rgba(0, 0, 0, 0) url("../img/save.png") no-repeat scroll left center;
+    
+}
+.table-style{ border: 1px solid #ddd; border-right: none!important; border-left: 0px;}
+.table-style td{ background: #fff; line-height: 2; border-bottom: 1px solid #ddd; border-right: 1px solid #ddd;}
+.table-style td div{height: 23px;}
+.table-style tr:nth-child(even) td{ background: #f5f5f5;}
+.grid-cell-modify div{background:url(../img/dirty.gif) no-repeat left top;}
+.table-style td div{position: relative; 
+/* padding: 0 5px; */
+width: auto;overflow: hidden; text-overflow: ellipsis ; white-space:nowrap;  }
+ 
+.grid-cell-selectd{ background: #cbcbcb!important;}
+.grid-header-select {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.data-grid-header{width: 760px;overflow:hidden;}
+.data-grid-body{width: 760px;}
+.grid-header-inner{width: 10000px;float:left;}
+.grid-body-inner{width: 760px;overflow: auto;height: 300px;}
